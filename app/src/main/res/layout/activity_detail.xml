@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/back_icon"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/txt_headline"
+            style="@style/Headings_1"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="@string/profile" />
+
+        <TextView
+            android:id="@+id/txt_detailTitle"
+            style="@style/Headings_2"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txt_headline"
+            android:layout_marginTop="25dp"
+            android:text="@string/journal_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_detailVol"
+            style="@style/Paragraph"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txt_detailTitle"
+            android:layout_marginTop="5dp"
+            android:text="@string/latest_volume"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/img_detailCover"
+            android:layout_width="145dp"
+            android:layout_height="190dp"
+            android:layout_below="@+id/txt_detailVol"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/journal_cover_image"
+            android:src="@drawable/accounting_information_systems" />
+
+        <TextView
+            android:id="@+id/txt_Desc"
+            style="@style/Headings_3"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/img_detailCover"
+            android:text="@string/journal_description" />
+
+        <TextView
+            android:id="@+id/txt_detailDesc"
+            style="@style/Paragraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_Desc"
+            android:layout_marginBottom="25dp"
+            android:text="@string/journal_description" />
+
+        <TextView
+            android:id="@+id/txt_linksource"
+            style="@style/Headings_3"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txt_detailDesc"
+            android:text="@string/link_source"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/txt_detailLink"
+            style="@style/Paragraph"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_linksource"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="50dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/link_source" />
+
+        <ImageView
+            android:id="@+id/icon_share"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignTop="@id/txt_detailLink"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/back_icon"
+            android:src="@drawable/ic_baseline_send_24" />
+
+        <TextView
+            style="@style/Paragraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_share"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="0dp"
+            android:text="@string/share"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
